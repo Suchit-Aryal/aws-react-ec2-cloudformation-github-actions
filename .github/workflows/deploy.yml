@@ -66,9 +66,8 @@ jobs: # Jobs in this workflow
       - name: Configure AWS credentials # Step name shown in the log
         uses: aws-actions/configure-aws-credentials@v4 # Official AWS action that sets up CLI credentials
         with: # Inputs for the action
-          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }} # Sandbox access key from repo secrets
-          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }} # Sandbox secret key from repo secrets
-          aws_session_token=IQoJb3JpZ2luX2VjECUaCXVzLXdlc3QtMiJGMEQCIHf1X3uHCZNquJEAnGJ/I81tXCBvsA101zB2CrGvj9hCAiAOX3fL1cCCUi6xzpQJdW6c7bPKcpymPLKjETOxYvpc6yqpAgju//////////8BEAIaDDY5MjYxMzQ4MzE1NCIMRA3rq8i6rFsfJuAqKv0BPm8V7I3NmwfBHrg6AiyQfJs/QGUjREbizAU9hg/FwZqlKUNFM1u4SeSD/VThEueP6oGxPZjZ9ylEIj3FltLM7Y9iT2yN7VfsdNeZs3GXaDCOB4bzvIvU/F99b4cC+SnQLtmo3079JyAo+Xnm/nz2+ixRelyvW/hyMuDZv2qfIrw/+5fT69XedY4XPBI6cfK+Rh5dQjkQ+JDMHLwPMFyGgt6F8kgKA4LfbO5N3aWMgo4FElvJKC0ufX6ImK4+PYKZPVv5TKddk0E38oykb5NBb33Sv1rOVgV8NMnCZAJb9ci7XDzR/VT4PvNHB6VqGV6rMzwRlx4EH5DQtRrYgzDlhZLWBjqeARB5onbXjhQL/ydgLCk0qufxiQCPU9wdNdAR9SAyCX5ilK64Hj41WPmkIvAYwTSZMEYN7LkoJ+eFJ/ay0PiAOWtPynsZi6XfV5iTg9VQnvo2n9z7chQhbrONKXEDsQR9ZrTHYsydXIjGGWDUNESlCbzX2C2ooo/kAyTcCd58DOrFlyFYD4XwYDcdT3GZ+739VdWt9ToBcekA4Tnrvr41
+          aws-access-key-id: ASIA2CQX3BKJEBZ7JOQJ # Sandbox access key from repo secrets
+          aws-secret-access-key: 6ekM3iTidE6ohgVF2hAu3DS3mnFspPyKT9pcpFT7 # Sandbox secret key from repo secrets
           aws-region: ${{ env.AWS_REGION }} # Region from the env block
 
       - name: Validate template # Step name shown in the log
