@@ -66,8 +66,9 @@ jobs: # Jobs in this workflow
       - name: Configure AWS credentials # Step name shown in the log
         uses: aws-actions/configure-aws-credentials@v4 # Official AWS action that sets up CLI credentials
         with: # Inputs for the action
-          aws-access-key-id: ASIA2CQX3BKJEBZ7JOQJ # Sandbox access key from repo secrets
-          aws-secret-access-key: 6ekM3iTidE6ohgVF2hAu3DS3mnFspPyKT9pcpFT7 # Sandbox secret key from repo secrets
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-session-token: ${{ secrets.AWS_SESSION_TOKEN }}
           aws-region: ${{ env.AWS_REGION }} # Region from the env block
 
       - name: Validate template # Step name shown in the log
